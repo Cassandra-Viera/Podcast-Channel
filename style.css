@@ -18,6 +18,7 @@ body {
 nav {
     width: 320px;
     height: 44px;
+<<<<<<< HEAD
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,6 +26,15 @@ nav {
     margin: 0 auto;
     position: fixed;
     background-color: white;
+=======
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin: 0 auto;
+    position: fixed;
+>>>>>>> e759ce7 (Correccion de proyecto podcast)
     z-index: 1;
 }
 
@@ -35,11 +45,16 @@ nav {
 /* Aquí inicia Menú Hamburguesa */
 
 .menu-hamburguesa {
+<<<<<<< HEAD
+=======
+    display: block;
+>>>>>>> e759ce7 (Correccion de proyecto podcast)
     position: relative;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
 }
 
 .menu {
@@ -68,6 +83,29 @@ nav {
 }
 
 .label-menu div {
+=======
+    z-index: 1;
+}
+
+.input-menu {
+    position: fixed;
+    opacity: 0;
+    z-index: 5;
+    -webkit-touch-callout: none;
+    cursor: pointer;
+}
+
+.label-menu {
+    width: 18px;
+    height: 12px;
+    display: block;
+    position: fixed;
+    cursor: pointer;
+}
+
+.label-menu span {
+    display: block;
+>>>>>>> e759ce7 (Correccion de proyecto podcast)
     width: 18px;
     height: 2px;
     border-radius: 3px;
@@ -75,6 +113,7 @@ nav {
     position: absolute;
     top: 0px;
     left: 0px;
+<<<<<<< HEAD
 }
 
 .label-menu div:nth-child(2) {
@@ -91,6 +130,51 @@ nav {
     left: 0px;
     transform: translateX(-95%);
     transition: all .4s ease-in-out;
+=======
+    z-index: 1;
+    transform: 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    background: 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+.label-menu span:nth-child(2) {
+    top: 4px;
+}
+
+.label-menu span:last-child {
+    top: 8px;
+}
+
+/*Transform to close label*/
+input:checked ~ .label-menu span:first-child {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    margin-top: 5px;
+    transition: all .5s ease-in-out;
+}
+input:checked ~ .label-menu span:nth-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+input:checked ~ .label-menu span:nth-child(2) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
+    transition: all .5s ease-in-out;
+}
+/*-------------------*/
+
+.cont-menu {
+    position: absolute;
+    bottom: -232px;
+    left: 0px;
+    transform: translateX(20%);
+    transition: all .3s ease-in-out;
+    -webkit-font-smoothing: antialiased;
+}
+
+.input-menu:checked ~ .cont-menu {
+    transform: translateX(-95%);
+    transition: all .3s ease-in-out;
+>>>>>>> e759ce7 (Correccion de proyecto podcast)
 }
 
 .cont-menu,
@@ -103,6 +187,10 @@ nav {
 .cont-menu li{
     list-style: none;
     border-bottom: 1px solid white;
+<<<<<<< HEAD
+=======
+    transition: color 0.3s ease;
+>>>>>>> e759ce7 (Correccion de proyecto podcast)
 }
 
 .cont-menu a {
@@ -203,8 +291,17 @@ main {
     padding: 10px;
 
 }
+<<<<<<< HEAD
 .reproductor {
     margin-bottom: 11px;
+=======
+.iframe {
+    margin-bottom: 11px;
+    width: 100%;
+    height: 232px;
+    border: 0;
+    background-color: transparent;
+>>>>>>> e759ce7 (Correccion de proyecto podcast)
 }
 
 .texto1 {
@@ -317,6 +414,10 @@ footer {
     width: 320px;
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
+=======
+    margin: auto;
+>>>>>>> e759ce7 (Correccion de proyecto podcast)
 }
 
 .copyright {
@@ -353,9 +454,18 @@ footer {
 
 @media only screen and (min-width: 321px) {
     nav {
+<<<<<<< HEAD
         width: 100%;
         height: auto;
     }
+=======
+        width: 100vw;
+        height: auto;
+    }
+    nav ul li{
+        width: 100%
+    }
+>>>>>>> e759ce7 (Correccion de proyecto podcast)
     .menu-escritorio {
         display: none;
     }
@@ -378,11 +488,16 @@ footer {
     .bt1 {
         margin-left: 50px;
     }
+<<<<<<< HEAD
     .reproductor {
         width: 80%;
     }
     .phone {
         margin: -100px 30px 0 auto;
+=======
+    .phone {
+        margin: -100px 20px auto;
+>>>>>>> e759ce7 (Correccion de proyecto podcast)
     }
     .seccion2 {
         display: flex;
@@ -399,6 +514,7 @@ footer {
         width: 100%;
     }
     .img {
+<<<<<<< HEAD
         width: 50%;
         margin-bottom: -2px;
     }
@@ -407,6 +523,18 @@ footer {
         height: auto;
         display: flex;
         flex-wrap: wrap;
+=======
+        width: 100%;
+        margin-bottom: -2px;
+    }
+    .fotos-invitadas {
+
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+>>>>>>> e759ce7 (Correccion de proyecto podcast)
     }
     .seccion5 {
         width: 100%;
@@ -432,7 +560,11 @@ footer {
     .episodios {
         padding: 0 50px;
     }
+<<<<<<< HEAD
     .reproductor {
+=======
+    .iframe {
+>>>>>>> e759ce7 (Correccion de proyecto podcast)
         width: 70%;
     }
     .phone {
@@ -448,6 +580,20 @@ footer {
         padding: 0 50px;
         margin: 20px;
     }
+<<<<<<< HEAD
+=======
+    .img {
+        width: 50%;
+        margin-bottom: -2px;
+    }
+    .fotos-invitadas {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+>>>>>>> e759ce7 (Correccion de proyecto podcast)
     .wrap{
         width: 100%;
         display: flex;
@@ -498,7 +644,10 @@ footer {
     .menu-escritorio ul li{
         list-style: none;
         margin-left: 50px;
+<<<<<<< HEAD
         color: #060A2;
+=======
+>>>>>>> e759ce7 (Correccion de proyecto podcast)
     }
     .menu-escritorio a:hover {
         color: #00F3BB;
@@ -543,7 +692,11 @@ footer {
         display: flex;
         font-size: 40px;
     }
+<<<<<<< HEAD
     .reproductor {
+=======
+    .iframe {
+>>>>>>> e759ce7 (Correccion de proyecto podcast)
         width: 40%;
         margin-bottom: 70px;
     }
@@ -551,7 +704,11 @@ footer {
         justify-content: space-evenly;
     }
     .phone {
+<<<<<<< HEAD
         margin: -120px 0px 0px 200px;
+=======
+        margin: -120px 0px 0px 100px;
+>>>>>>> e759ce7 (Correccion de proyecto podcast)
     }
     .seccion2 {
         display: flex;
@@ -559,7 +716,12 @@ footer {
     }
     .seccion2-cont {
         width: 100%;
+<<<<<<< HEAD
         margin-top: 30px;
+=======
+        height: auto;
+        margin-top: -50px;
+>>>>>>> e759ce7 (Correccion de proyecto podcast)
         margin-left: 50px;
     }
     .texto1 {
@@ -581,7 +743,11 @@ footer {
     .subtitulo3, 
     .subtitulo4 {
         display: block;
+<<<<<<< HEAD
         margin-left: 200px;
+=======
+        margin-left: 150px;
+>>>>>>> e759ce7 (Correccion de proyecto podcast)
         font-size: 40px;
     }
     .subtitulo4 {
@@ -597,6 +763,10 @@ footer {
         height: auto;
         display: flex;
         flex-wrap: wrap;
+<<<<<<< HEAD
+=======
+        flex-direction: row;
+>>>>>>> e759ce7 (Correccion de proyecto podcast)
     }
     .seccion4 {
         width: 100%;
