@@ -35,10 +35,7 @@ nav {
 /* Aquí inicia Menú Hamburguesa */
 
 .menu-hamburguesa {
-<<<<<<< HEAD
-=======
     display: block;
->>>>>>> e759ce7 (Correccion de proyecto podcast)
     position: relative;
     height: auto;
     display: flex;
@@ -113,6 +110,7 @@ input:checked ~ .label-menu span:nth-child(2) {
 }
 
 .input-menu:checked ~ .cont-menu {
+
     transform: translateX(-95%);
     transition: all .3s ease-in-out;
 }
